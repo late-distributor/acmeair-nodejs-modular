@@ -1,0 +1,10 @@
+/node_modules
+/.classpath
+/.metadata
+/.project
+/.settings
+/bin
+/build
+/target
+npm-debug.log
+/database_volume

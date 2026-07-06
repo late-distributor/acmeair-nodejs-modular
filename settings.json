@@ -1,0 +1,28 @@
+{
+	"port":9080,
+	"contextRoot": "/rest/api",
+		
+	"mongoHost" : "127.0.0.1",
+	"mongoPort" : 27017,
+	"mongoConnectionPoolSize": 10,
+
+	"cloudant_host": "localhost",
+	"cloudant_port": 443,
+	"cloudant_username": "username",
+	"cloudant_password":"password",
+	"cloudant_httpclient.maxTotal":200,
+	"cloudant_httpclient.maxPerRoute":100,
+	"cloudant_httpclient.soTimeout":5000,
+	"cloudant_httpclient.connectionTimeout":5000,
+
+	"cassandra_contactPoints" : ["127.0.0.1"],
+	"cassandra_keyspace" : "acmeair_keyspace",
+
+	"useFlightDataRelatedCaching" : true,
+	
+	"flightDataCacheTTL" :  1200000,
+	"flightDataCacheMaxSize" : 100000,
+	
+	"loggerLevel" : "DEBUG",
+	"useDevLogger" : true     
+}

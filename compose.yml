@@ -1,0 +1,14 @@
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    # Uncomment the following for persistent database
+    # Leave commented to create new database every time the container is created
+    # volumes:
+    #   - ./database_volume:/data/db
+    restart: unless-stopped
+  acmeair:
+    build: .
+    ports:
+      - "9080:9080"
